@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.12.19"
+          enable-cache: true
+      - name: Install Python 3.12 and dependencies
+        run: uv sync --locked --extra dev
+      - name: Ruff
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+      - name: Tests
+        run: uv run pytest
+      - name: Golden-set evaluation
+        run: uv run python -m rag_assistant.evaluation
+      - name: Build container
+        run: docker build -t production-rag-assistant:test .

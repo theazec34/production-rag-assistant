@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "documents": [
+    {
+      "id": "returns",
+      "title": "Returns and refunds",
+      "source": "kb://policies/returns-v1",
+      "text": "Customers may return an unused physical product within 30 calendar days of delivery. The item must include its original packaging and proof of purchase. Refunds go to the original payment method after inspection, normally within five business days. Downloadable products and gift cards are not refundable. A damaged item should be reported to support within 48 hours of delivery, with photographs, so the team can arrange a replacement or refund."
+    },
+    {
+      "id": "support",
+      "title": "Customer support hours",
+      "source": "kb://operations/support-hours-v1",
+      "text": "Customer support is staffed Monday through Friday from 09:00 to 17:00 UTC, excluding published company holidays. Requests can be submitted by email at any time and receive a ticket number automatically. The team targets a response within one business day. This response time is a target rather than a service-level guarantee. There is no telephone support and no weekend live chat."
+    },
+    {
+      "id": "privacy",
+      "title": "Account data retention",
+      "source": "kb://policies/data-retention-v1",
+      "text": "After an account deletion request is verified, profile data is scheduled for deletion within 30 days. Encrypted backups can retain account data for up to 90 additional days before normal rotation removes it. Billing records may be retained for seven years where tax law requires it. Users can request an export of their profile data before deletion. The company does not promise immediate removal from backups."
+    },
+    {
+      "id": "security",
+      "title": "Password and account security",
+      "source": "kb://guides/account-security-v1",
+      "text": "Passwords must contain at least 12 characters. The service supports time-based one-time password multi-factor authentication, also called TOTP. Recovery codes are shown once during setup and should be stored offline. Support staff will never ask for a password, an authentication code, or a recovery code. If an account may be compromised, change the password, revoke active sessions, and contact support."
+    }
+  ]
+}
